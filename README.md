@@ -1,1 +1,53 @@
 # TicketServiceRepository
+
+The following details are also listed in the Help.txt file in the default package.
+
+Execution:
+To start the Ticket Service application compile and execute the Main.java file in the default package.
+
+File descriptions:
+
+Package: default
+1. Main.java: Contains the main method to start the service.
+2. Help.txt: Help file.
+
+Package: com.joel.data
+1. CapacityDetails.java: 
+Contains the total capacity of every venue level along with getter methods
+
+2. PriceDetails.java:
+Contains the price of seats per venue level along with getter methods
+
+3. Ticket.java:
+A plain old java object to store ticket details.
+
+Package: com.joel.service
+1. TicketServiceInterface.java: 
+The interface provided by Walmart.
+
+2. TicketService.java:
+My implementation of Walmart's interface.
+
+As per your instructions,the design of the "seatHold" object returned by the method 
+"findAndHoldSeats" was to be decided by me. 
+
+For the sake of simplicity, I have decide to keep the return object of the method
+as a String object. This string returned contains user readable messages. 
+
+3. TicketServiceFacade:
+This program file generates a text based UI which allows users to 
+interact with the program. It accepts user inputs and displays appropriate 
+messages after processing them.
+
+Package: com.joel.serviceManager
+1. ReservationsManager:
+This file contains code that actually performs seat allocation , deallocation, 
+gets available seats per level and returns reservation details.
+
+2. IdGenerator
+Generates id's for tickets.
+
+3. DeleteReservations
+A thread to delete unconfirmed reservations 1 minute after they are made. If you wish to change the deletion time make changes to variable "seconds" in this file.
+
+I hope this assignment complies with your requirements and withstands your tests.
