@@ -42,7 +42,7 @@ public class TicketService implements TicketServiceInterface
 		int maxlvl = maxLevel.orElse(4);
 		if(minlvl<1||minlvl>4||maxlvl<1||maxlvl>4||numSeats<1||customerEmail.isEmpty())
 		{
-			returnValue=returnValue+"Invalid input.";
+			returnValue="Unable to process request. Invalid input.";
 		}
 		else
 		{
